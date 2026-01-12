@@ -211,7 +211,7 @@ export default function CalendarPage() {
         </div>
 
         <div className="mt-2 text-xs text-neutral-500">
-          Menu source later: <span className="underline">{location.buMenuUrl}</span>
+          Menu source: <span className="underline">{location.buMenuUrl}</span>
         </div>
       </div>
 

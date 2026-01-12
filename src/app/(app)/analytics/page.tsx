@@ -5,7 +5,6 @@ import AnalyticsClient from "./AnalyticsClient";
 import { getBalances, getRecentSpendingTx } from "./actions";
 
 export default async function AnalyticsPage() {
-  // How many days to chart. You can change this anytime.
   const days = 30;
 
   // Fetch balances and recent transactions in parallel.

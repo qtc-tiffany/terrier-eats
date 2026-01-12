@@ -229,14 +229,14 @@ export default function BudgetClient({
             })}
           </div>
 
-          {/* Bottom summary bar (Figma-style) */}
+          {/* Bottom summary bar */}
           <div className="mt-10 flex justify-center">
             <div className="w-full max-w-[380px] rounded-xl bg-[#D9D9D9] px-4 py-3 text-center shadow-md">
               <div className="text-sm text-[#CC0000] font-medium">
                 Swipes Available for Week: {balances.swipes_remaining}
               </div>
 
-              {/* Optional: weekly dining budget summary if you created one */}
+              {/* Optional: weekly dining budget summary */}
               {diningBudget && (
                 <div className="mt-1 text-xs text-black/60">
                   Weekly dining limit: {Number(diningBudget.total_limit).toFixed(0)} • Spent this week:{" "}
@@ -290,7 +290,7 @@ export default function BudgetClient({
                 <div className="h-1 w-32 rounded-full bg-black/20" />
               </div>
 
-              {/* Optional: weekly convenience limit if you created one */}
+              {/* Optional: weekly convenience limit if created one */}
               {convenienceBudget && (
                 <div className="mt-4 text-center text-xs text-black/60">
                   Weekly convenience limit: {Number(convenienceBudget.total_limit).toFixed(0)} • Spent this week:{" "}
@@ -300,7 +300,7 @@ export default function BudgetClient({
             </div>
           </div>
 
-          {/* Category list (Figma-style) */}
+          {/* Category list */}
           <div className="mt-8 space-y-4">
             {(convenienceByCategory.length ? convenienceByCategory : [
               { name: "Laundry", spent: 0 },

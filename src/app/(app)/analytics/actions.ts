@@ -14,9 +14,9 @@ export type BalanceRow = {
 
 export type TxRow = {
   id: string;
-  occurred_at: string; // matches your Supabase column name
+  occurred_at: string;
   type: SpendType;
-  amount: number; // negative for spend in your current pattern
+  amount: number; // negative for spend
   note: string | null;
   source: string | null;
 };
@@ -48,7 +48,7 @@ export async function getBalances(): Promise<BalanceRow> {
 
 /**
  * Pull last N days of transactions.
- * Note: your table uses occurred_at (not created_at).
+ * Note: the table uses occurred_at (not created_at).
  */
 export async function getRecentSpendingTx(days: number): Promise<TxRow[]> {
   const supabase = await createSupabaseServerClient();
