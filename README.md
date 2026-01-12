@@ -109,20 +109,22 @@ This project intentionally balances:
 
 ## 📁 Project Structure
 
+```text
 src/
 ├─ app/
-│   ├─ (auth)/login
-│   ├─ (app)/
-│   │   ├─ home
-│   │   ├─ calendar
-│   │   ├─ analytics
-│   │   ├─ budget
-│   │   └─ profile
+│  ├─ (auth)/
+│  │  └─ login/
+│  └─ (app)/
+│     ├─ home/
+│     ├─ calendar/
+│     ├─ analytics/
+│     ├─ budget/
+│     └─ profile/
 ├─ data/
-│   └─ mockMenus.ts
+│  └─ mockMenus.ts
 ├─ lib/
-│   └─ supabaseServer.ts
-|   └─ supabaseClient.ts
+│  ├─ supabaseServer.ts
+│  └─ supabaseClient.ts
 ├─ components/
 └─ types/
 
