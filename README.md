@@ -128,6 +128,8 @@ src/
 ├─ components/
 └─ types/
 
+'''
+
 ---
 
 ## 🧪 Mock Data Philosophy
